@@ -23,9 +23,13 @@ public class Mov_nave : MonoBehaviour
 
         transform.Translate(Vector3.right * desplX * Time.deltaTime * velocidad);
 
-        desplY = Input.GetAxis("Vertical");
+        desplZ = Input.GetAxis("Vertical");
 
         transform.Translate(Vector3.forward * desplZ * Time.deltaTime * velocidad);
+
+        /*desplY = Input.GetButtonDown("joystickbutton 4");
+
+        transform.Translate(Vector3.down * desplY * Time.deltaTime * velocidad);*/
 
 
     }
