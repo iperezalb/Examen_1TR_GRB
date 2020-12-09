@@ -13,7 +13,7 @@ public class Mov_nave : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -30,6 +30,6 @@ public class Mov_nave : MonoBehaviour
         /*desplY = Input.GetButtonDown("joystickbutton 4");
 
         transform.Translate(Vector3.down * desplY * Time.deltaTime * velocidad);*/
-
     }
+}
   
