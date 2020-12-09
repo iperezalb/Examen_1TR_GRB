@@ -31,6 +31,5 @@ public class Mov_nave : MonoBehaviour
 
         transform.Translate(Vector3.down * desplY * Time.deltaTime * velocidad);*/
 
-
     }
-}
+  

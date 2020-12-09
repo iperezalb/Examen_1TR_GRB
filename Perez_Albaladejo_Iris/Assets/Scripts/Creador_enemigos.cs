@@ -10,6 +10,10 @@ public class Creador_enemigos : MonoBehaviour
 
     Vector3 newPosY;
 
+    [SerializeField] MeshRenderer myMesh;
+
+    [SerializeField] GameObject enemigo_destruido;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +38,14 @@ public class Creador_enemigos : MonoBehaviour
 
             Instantiate(Enemigo, newPosY, Quaternion.identity);
         }
+
+         void OnTriggerEnter(Collider other)
+        {
+            
+           Destroy(enemigo_destruido);
+
+        }
+
 
     }
 }
