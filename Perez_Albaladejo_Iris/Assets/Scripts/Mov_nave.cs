@@ -21,11 +21,11 @@ public class Mov_nave : MonoBehaviour
     {
         desplX = Input.GetAxis("Horizontal");
 
-        transform.Translate(Vector3.left * desplX * Time.deltaTime * velocidad);
+        transform.Translate(Vector3.right * desplX * Time.deltaTime * velocidad);
 
         desplY = Input.GetAxis("Vertical");
 
-        transform.Translate(Vector3.back * desplZ * Time.deltaTime * velocidad);
+        transform.Translate(Vector3.forward * desplZ * Time.deltaTime * velocidad);
 
 
     }
